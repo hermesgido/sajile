@@ -13,15 +13,15 @@
                         <i class="fa-solid fa-star"></i>
                         <h6 class="menu-name {{ menuActive('post.popular') }}">@lang('Popular')</h6>
                     </a>
-                    <a href="{{ route('post.job') }}" class="menu-item">
+                    {{-- <a href="{{ route('post.job') }}" class="menu-item">
                         <i class="fa-solid fa-toolbox"></i>
                         <h6 class="menu-name {{ menuActive('post.job') }}">@lang('Jobs')</h6>
-                    </a>
+                    </a> --}}
 
-                    <a href="{{ route('post.events') }}" class="menu-item">
+                    {{-- <a href="{{ route('post.events') }}" class="menu-item">
                         <i class="fa-solid fa-calendar-days"></i>
                         <h6 class="menu-name {{ menuActive('post.events') }}">@lang('Events')</h6>
-                    </a>
+                    </a> --}}
 
                     <a href="{{ route('save.post') }}" class="menu-item">
                         <i class="fa-solid fa-bookmark"></i>
