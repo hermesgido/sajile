@@ -154,9 +154,9 @@ class RegisterController extends Controller
             'city' => ''
         ];
         $user->status = 1;
-        $user->kv = $general->kv ? 0 : 1;
-        $user->ev = $general->ev ? 0 : 1;
-        $user->sv = $general->sv ? 0 : 1;
+        $user->kv = $general->kv ? 1 : 1;
+        $user->ev = $general->ev ? 1 : 1;
+        $user->sv = $general->sv ? 1 : 1;
         $user->ts = 0;
         $user->tv = 1;
         $user->save();

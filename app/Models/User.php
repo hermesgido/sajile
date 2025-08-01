@@ -108,7 +108,7 @@ class User extends Authenticatable
 
     public function scopeEmailVerified()
     {
-        return $this->where('ev', 0);
+        return $this->where('ev', 1);
     }
 
     public function scopeMobileVerified()
