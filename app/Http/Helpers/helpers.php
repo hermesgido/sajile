@@ -43,7 +43,7 @@ function getNumber($length = 8)
 
 function systemDetails()
 {
-    $system['name'] = 'proforum';
+    $system['name'] = 'Sajile';
     $system['version'] = '1.3.0';
     $system['build_version'] = '1.5.3';
     return $system;

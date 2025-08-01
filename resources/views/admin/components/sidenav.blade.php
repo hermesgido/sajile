@@ -26,19 +26,19 @@
                     </a>
                 </li>
 
-                <li class="sidebar-menu-item {{ menuActive('admin.jobs.posts.list') }}">
+                {{-- <li class="sidebar-menu-item {{ menuActive('admin.jobs.posts.list') }}">
                     <a href="{{ route('admin.jobs.posts.list') }}" class="nav-link ">
                         <i class="menu-icon las la-box"></i>
                         <span class="menu-title">@lang('Jobs')</span>
                     </a>
-                </li>
+                </li> --}}
 
-                <li class="sidebar-menu-item {{ menuActive('admin.events.posts.list') }}">
+                {{-- <li class="sidebar-menu-item {{ menuActive('admin.events.posts.list') }}">
                     <a href="{{ route('admin.events.posts.list') }}" class="nav-link ">
                         <i class="menu-icon las la-calendar-day"></i>
                         <span class="menu-title">@lang('Events')</span>
                     </a>
-                </li>
+                </li> --}}
 
                 <li class="sidebar-menu-item {{ menuActive('admin.post.comment.*') }}">
                     <a href="{{ route('admin.post.comment.reports') }}" class="nav-link">
