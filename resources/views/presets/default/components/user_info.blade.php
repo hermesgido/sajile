@@ -64,16 +64,16 @@
         </div>
     @endif
 </div>
-
+{{-- 
 <div class="popular-topics-box">
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-between mb-3">
-                {{-- <h5 class="card-title">@lang('Experience')</h5>
+                <h5 class="card-title">@lang('Experience')</h5>
                 @if (auth()->user() && auth()->id() === $user->id)
                     <a href="{{ route('user.experience.index') }}" class="btn btn--sm"><i
                             class="fa-solid fa-plus"></i></a>
-                @endif --}}
+                @endif
             </div>
 
             @if (count($user->experience))
@@ -109,12 +109,12 @@
                     </div>
                 @endforeach
             @else
-                {{-- <p>@lang('Nothing to experience added')</p> --}}
+                <p>@lang('Nothing to experience added')</p>
             @endif
 
         </div>
     </div>
-</div>
+</div> --}}
 
 @php
     $skills = json_decode(@$user->skills);
