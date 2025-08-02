@@ -142,6 +142,7 @@ class RegisterController extends Controller
         $user->ref_by = $referUser ? $referUser->id : 0;
         $user->country_code = $data['country_code'];
         $user->mobile = $data['mobile_code'].$data['mobile'];
+        $user->image = '688d120794d841754075655.png';
         $user->address = [
             'address' => '',
             'state' => '',
