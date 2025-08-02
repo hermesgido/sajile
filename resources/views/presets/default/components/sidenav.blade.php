@@ -82,7 +82,7 @@
                     </a>
                 </li>
 
-                <li>
+                {{-- <li>
                     <a href="{{ route('user.price.plan.index') }}">
 
                         @lang('Pricing Plans')
@@ -102,23 +102,23 @@
                     <a href="{{ route('user.events.lists') }}">
                         @lang('My events')
                     </a>
-                </li>
-                <li>
+                </li> --}}
+                {{-- <li>
                     <a href="{{ route('user.deposit.history') }}">
                         @lang('Deposit-Log')
                     </a>
-                </li>
-                <li>
+                </li> --}}
+                {{-- <li>
                     <a href="{{ route('user.withdraw') }}">
                         @lang('Withdrawal')
                     </a>
-                </li>
+                </li> --}}
 
-                <li>
+                {{-- <li>
                     <a href="{{ route('user.withdraw.history') }}">
                         @lang('Withdraw-Log')
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="{{ route('ticket') }}">
                         @lang('Support Ticket')
@@ -135,12 +135,12 @@
                         @lang('Change Password')
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="{{ route('user.twofactor') }}">
 
                         @lang('2Fa Security')
                     </a>
-                </li>
+                </li> --}}
 
             @endauth
             @guest

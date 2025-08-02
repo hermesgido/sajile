@@ -12,20 +12,20 @@
 
     <div class="community-item-wraper">
         <div class="community-item">
-            <div class="item-status">
+            {{-- <div class="item-status">
                 <h5 class="count">{{ @$user?->credit }}</h5>
                 <h6 class="item-status-title">@lang('Total Credit')</h6>
-            </div>
+            </div> --}}
             <div class="item-status">
                 <h5 class="count">{{ @$user?->posts->count() }}</h5>
                 <h6 class="item-status-title">@lang('Total Post')</h6>
             </div>
         </div>
         <div class="community-item">
-            <div class="item-status">
+            {{-- <div class="item-status">
                 <h5 class="count">{{ $general->cur_sym }}{{ showAmount($user->balance) }}</h5>
                 <h6 class="item-status-title">@lang('Balance')</h6>
-            </div>
+            </div> --}}
             <div class="item-status">
                 <h5 class="count">{{ $user->all_post_comments_count() }}</h5>
                 <h6 class="item-status-title">@lang('Total Replies')</h6>
@@ -69,11 +69,11 @@
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-between mb-3">
-                <h5 class="card-title">@lang('Experience')</h5>
+                {{-- <h5 class="card-title">@lang('Experience')</h5>
                 @if (auth()->user() && auth()->id() === $user->id)
                     <a href="{{ route('user.experience.index') }}" class="btn btn--sm"><i
                             class="fa-solid fa-plus"></i></a>
-                @endif
+                @endif --}}
             </div>
 
             @if (count($user->experience))
@@ -109,7 +109,7 @@
                     </div>
                 @endforeach
             @else
-                <p>@lang('Nothing to experience added')</p>
+                {{-- <p>@lang('Nothing to experience added')</p> --}}
             @endif
 
         </div>

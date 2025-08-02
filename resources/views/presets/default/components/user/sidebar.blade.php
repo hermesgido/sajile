@@ -18,7 +18,7 @@
                         @endif
                     </a>
 
-                    <a href="{{ route('user.price.plan.index') }}" class="menu-item">
+                    {{-- <a href="{{ route('user.price.plan.index') }}" class="menu-item">
                         <span class="icon"><i class="fa-solid fa-award"></i></span>
                         <h6 class="text {{ menuActive('user.price.plan.index') }}">@lang('Price Plan')</h6>
                     </a>
@@ -38,9 +38,9 @@
                     <a href="{{ route('user.events.lists') }}" class="menu-item">
                         <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
                         <h6 class="text {{ menuActive('user.events.*') }}">@lang('My Events')</h6>
-                    </a>
+                    </a> --}}
 
-                    <a href="{{ route('user.deposit.history') }}" class="menu-item">
+                    {{-- <a href="{{ route('user.deposit.history') }}" class="menu-item">
                         <span class="icon"><i class="fa-solid fa-receipt"></i></span>
                         <h6 class="text {{ menuActive('user.deposit.history') }}">@lang('Deposit-Log')</h6>
                     </a>
@@ -53,7 +53,7 @@
                     <a href="{{ route('user.withdraw.history') }}" class="menu-item">
                         <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
                         <h6 class="text {{ menuActive('user.withdraw.history') }}">@lang('Withdraw-Log')</h6>
-                    </a>
+                    </a> --}}
 
                     <a href="{{ route('user.profile.setting') }}" class="menu-item">
                         <span class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
@@ -65,10 +65,10 @@
                         <h6 class="text {{ menuActive('user.change.password') }}">@lang('Change Password')</h6>
                     </a>
 
-                    <a href="{{ route('user.twofactor') }}" class="menu-item">
+                    {{-- <a href="{{ route('user.twofactor') }}" class="menu-item">
                         <span class="icon"><i class="fa-solid fa-signs-post"></i></span>
                         <h6 class="text {{ menuActive('user.twofactor') }}">@lang('2Fa Security')</h6>
-                    </a>
+                    </a> --}}
 
                     <a href="{{ route('ticket') }}" class="menu-item">
                         <span class="icon"><i class="fa-solid fa-ticket"></i></span>

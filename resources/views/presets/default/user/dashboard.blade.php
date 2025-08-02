@@ -24,11 +24,10 @@
                                                 <div class="user-thumb">
                                                     {{-- <img src="{{ getImage(getFilePath('userProfile') . '/' . auth()->user()?->image, getFileSize('userProfile')) }}"
                                                         alt="avatar"> --}}
-                                                     <img src="{{ auth()->user()?->image
-    ? getImage(getFilePath('userProfile') . '/' . auth()->user()->image, getFileSize('userProfile'))
-    : asset('assets/images/user/profile/avatar6.png') }}"
-    alt="avatar">
-
+                                                    <img src="{{ auth()->user()?->image
+                                                        ? getImage(getFilePath('userProfile') . '/' . auth()->user()->image, getFileSize('userProfile'))
+                                                        : asset('assets/images/user/profile/avatar6.png') }}"
+                                                        alt="avatar">
 
                                                 </div>
                                                 <input type="text" class="form-control form--control feed-input"
