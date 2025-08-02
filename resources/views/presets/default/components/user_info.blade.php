@@ -116,10 +116,10 @@
     </div>
 </div> --}}
 
-@php
+{{-- @php
     $skills = json_decode(@$user->skills);
-@endphp
-<div class="popular-topics-box">
+@endphp --}}
+{{-- <div class="popular-topics-box">
     <div class="user-social-meta mb-2">
         <h5>@lang('Skills')</h5>
         @if (@$user->skills)
@@ -136,7 +136,7 @@
             <span>@lang('Nothing to skill added')</span>
         @endif
     </div>
-</div>
+</div> --}}
 
 
 <!-- on screen chat box -->
