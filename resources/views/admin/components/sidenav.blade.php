@@ -57,12 +57,12 @@
                         <span class="menu-title">@lang('Categories')</span>
                     </a>
                 </li>
-                <li class="sidebar-menu-item {{ menuActive('admin.price.plan.*') }}">
+                {{-- <li class="sidebar-menu-item {{ menuActive('admin.price.plan.*') }}">
                     <a href="{{ route('admin.price.plan.all') }}" class="nav-link ">
                         <i class="menu-icon  las la-tree"></i>
                         <span class="menu-title">@lang('Price Plan')</span>
                     </a>
-                </li>
+                </li> --}}
 
 
                 <li class="sidebar__menu-header">@lang('Socialite Credential')</li>
@@ -84,8 +84,8 @@
                     </a>
                 </li>
 
-                <li class="sidebar__menu-header">@lang('Transactions')</li>
-                <li class="sidebar-menu-item {{ menuActive('admin.deposit.*') }}">
+                {{-- <li class="sidebar__menu-header">@lang('Transactions')</li> --}}
+                {{-- <li class="sidebar-menu-item {{ menuActive('admin.deposit.*') }}">
                     <a href="{{ route('admin.deposit.pending') }}" class="nav-link ">
                         <i class="menu-icon las la-wallet"></i>
                         <span class="menu-title">@lang('Deposits')</span>
@@ -111,17 +111,17 @@
                             </div>
                         @endif
                     </a>
-                </li>
+                </li> --}}
 
 
                 <li class="sidebar__menu-header">@lang('Report')</li>
-                <li
+                {{-- <li
                     class="sidebar-menu-item {{ menuActive(['admin.report.transaction', 'admin.report.transaction.search']) }}">
                     <a href="{{ route('admin.report.transaction') }}" class="nav-link">
                         <i class="menu-icon las la-credit-card"></i>
                         <span class="menu-title">@lang('Transactions')</span>
                     </a>
-                </li>
+                </li> --}}
                 <li
                     class="sidebar-menu-item {{ menuActive(['admin.report.login.history', 'admin.report.login.ipHistory']) }}">
                     <a href="{{ route('admin.report.login.history') }}" class="nav-link">
