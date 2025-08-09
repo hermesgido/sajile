@@ -308,7 +308,7 @@
                                                                     <!-- Copy to Clipboard -->
                                                                     <li>
                                                                         <a href="javascript:void(0);"
-                                                                            class="report_button"
+                                                                            class="report_buttond"
                                                                             onclick="copyToClipboard('{{ Request::url() }}')">
                                                                             <i class="fa-solid fa-copy"></i>
                                                                             <span>@lang('Copy Link')</span>
