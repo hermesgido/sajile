@@ -1,5 +1,5 @@
 {{-- report modal --}}
-<div class="modal fade report_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade report_modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <form id="report_form">
             <div class="modal-content">
