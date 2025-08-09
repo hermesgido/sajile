@@ -301,7 +301,7 @@
                                                                         <a target="_blank" class="report_button"
                                                                             href="https://api.whatsapp.com/send?text={{ slug(@$post->title) }}+{{ Request::url() }}">
                                                                             <i class="fa-brands fa-whatsapp"></i>
-                                                                            <span class="ms-3">@lang('WhatsApp')</span>
+                                                                            <span>@lang('WhatsApp')</span>
                                                                         </a>
                                                                     </li>
 
@@ -311,7 +311,7 @@
                                                                             class="report_button"
                                                                             onclick="copyToClipboard('{{ Request::url() }}')">
                                                                             <i class="fa-solid fa-copy"></i>
-                                                                            <span class="ms-3">@lang('Copy Link')</span>
+                                                                            <span>@lang('Copy Link')</span>
                                                                         </a>
                                                                     </li>
                                                                 </ul>

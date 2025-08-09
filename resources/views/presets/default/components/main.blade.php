@@ -153,7 +153,7 @@
                                     <!-- Copy to Clipboard -->
                                     <li>
                                         <a href="javascript:void(0);" class="report_button"
-                                            onclick="copyToClipboard('{{ Request::url() }}')">
+                                            onclick="copyToClipboard2('{{ Request::url() }}')">
                                             <i class="fa-solid fa-copy"></i>
                                             <span class="ms-3">@lang('Copy Link')</span>
                                         </a>
@@ -189,7 +189,7 @@
     </div>
 
     <script>
-        function copyToClipboard(text) {
+        function copyToClipboard2(text) {
             navigator.clipboard.writeText(text).then(function() {
                 // alert("Link copied to clipboard!");
             }, function(err) {
