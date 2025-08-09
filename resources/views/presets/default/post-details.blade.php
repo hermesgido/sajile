@@ -39,7 +39,7 @@
                                                     </p>
 
 
-                                                    @if (@$post->type=="job")<i
+                                                    @if (@$post->type == 'job')<i
                                                             class="fa-solid fa-circle"></i>
                                                         <p class="time-status">@lang('Deadline'):
                                                             {{ showDateTime(@$post->deadline, 'd M, Y') }}</p>
@@ -186,7 +186,7 @@
                                                     </div>
                                                 @endif
 
-                                                @if ($post->type == "event")
+                                                @if ($post->type == 'event')
                                                     <div class="job-time-line">
                                                         <p>@lang('Fee: '){{ __($general->cur_sym) }}{{ showAmount($post->fee) }}
                                                         </p>
@@ -232,7 +232,7 @@
                                                             <i class="las la-comments"></i>
                                                             <p id="postCommentCount">
                                                                 {{ number_format_short(@$post->comments?->count()) }}
-                                                                @if ($post->type == "text")
+                                                                @if ($post->type == 'text')
                                                                     @lang('Answers')
                                                                 @else
                                                                     @lang('Comments')
@@ -265,7 +265,8 @@
 
                                                             @if (@$post->type == 'event' && auth()->id() != @$post->user_id)
                                                                 @if (@$post->end_date > now()->format('Y-m-d'))
-                                                                    <a href="{{route('user.events.payment',$post->id)}}" class="btn btn--base mx-4">
+                                                                    <a href="{{ route('user.events.payment', $post->id) }}"
+                                                                        class="btn btn--base mx-4">
                                                                         @lang('Join')
                                                                         <i class="fa-regular fa-hand-pointer"></i>
                                                                     </a>
@@ -295,6 +296,24 @@
                                                                             <span>@lang('Twitter')</span>
                                                                         </a>
                                                                     </li>
+                                                                    <!-- WhatsApp -->
+                                                                    <li>
+                                                                        <a target="_blank" class="report_button"
+                                                                            href="https://api.whatsapp.com/send?text={{ slug(@$post->title) }}+{{ Request::url() }}">
+                                                                            <i class="fa-brands fa-whatsapp"></i>
+                                                                            <span class="ms-3">@lang('WhatsApp')</span>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <!-- Copy to Clipboard -->
+                                                                    <li>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="report_button"
+                                                                            onclick="copyToClipboard('{{ Request::url() }}')">
+                                                                            <i class="fa-solid fa-copy"></i>
+                                                                            <span class="ms-3">@lang('Copy Link')</span>
+                                                                        </a>
+                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -306,15 +325,13 @@
                                                 </button>
                                                 <button
                                                     class="bookmark-button
-                                                    @if (auth()->user()) @if (
-                                                        @$post->bookmarks?->first()->user_id == auth()->id()) 
+                                                    @if (auth()->user()) @if (@$post->bookmarks?->first()->user_id == auth()->id()) 
                                                             active-bookmark @endif
                                                     @endif"
                                                     data-post-id="{{ $post->id }}" type="button">
                                                     <i
                                                         class="fa-regular fa-bookmark 
-                                                        @if (auth()->user()) @if (
-                                                            @$post->bookmarks?->first()->user_id == auth()->id()) 
+                                                        @if (auth()->user()) @if (@$post->bookmarks?->first()->user_id == auth()->id()) 
                                                                 fa-solid @endif
                                                         @endif">
                                                     </i>
@@ -371,7 +388,7 @@
                                                                 <textarea placeholder="" class="form--control comment-replay-field" id="comment-field" name="comment"
                                                                     onkeypress="singleCommentSubmit(this)"></textarea>
                                                                 <label class="form--label">
-                                                                    @if ($post->type == "text")
+                                                                    @if ($post->type == 'text')
                                                                         @lang('Write Your Answer')
                                                                     @else
                                                                         @lang('Write Your Comments')
@@ -1184,6 +1201,15 @@
                 window.location.href = "{{ route('user.login') }}";
             }
 
+        }
+    </script>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // alert("Link copied to clipboard!");
+            }, function(err) {
+                console.error("Failed to copy: ", err);
+            });
         }
     </script>
 @endpush
