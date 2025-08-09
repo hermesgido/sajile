@@ -151,13 +151,13 @@
                                     </li>
 
                                     <!-- Copy to Clipboard -->
-                                    <li>
+                                    {{-- <li>
                                         <a href="javascript:void(0);" class="report_button2"
                                             onclick="copyToClipboard2('{{ Request::url() }}')">
                                             <i class="fa-solid fa-copy"></i>
                                             <span class="ms-3">@lang('Copy Link')</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
 
                             </div>
