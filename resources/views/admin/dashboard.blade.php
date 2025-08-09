@@ -17,7 +17,7 @@
         </div>
     @endif
     <div class="row gy-4">
-        <div class="col-xl-6">
+        {{-- <div class="col-xl-6">
 
             <div class="card">
                 <div class="card-body">
@@ -33,10 +33,11 @@
                     <div id="login-chart"></div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="col-xl-6">
             <div class="row gy-4">
-                <div class="col-sm-6">
+
+                {{-- <div class="col-sm-6">
                     <a href="{{ route('admin.deposit.list') }}">
                         <div class="card prod-p-card background-pattern">
                             <div class="card-body">
@@ -53,8 +54,9 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-sm-6">
+                </div> --}}
+
+                {{-- <div class="col-sm-6">
                     <a href="{{ route('admin.deposit.list') }}">
                         <div class="card prod-p-card background-pattern-white bg--primary">
                             <div class="card-body">
@@ -71,8 +73,8 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                
+                </div> --}}
+{{--                 
                 <div class="col-sm-6">
                     <a href="{{ route('admin.withdraw.log') }}">
                         <div class="card prod-p-card background-pattern-white bg--primary">
@@ -110,7 +112,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> --}}
               
                 <div class="col-sm-12">
                     <div class="card p-3 rounded-3">
@@ -173,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-6">
+        {{-- <div class="col-xl-6">
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
@@ -208,7 +210,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 
